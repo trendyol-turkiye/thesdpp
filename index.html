@@ -741,12 +741,6 @@ TheSDP IPTV; ultra kararlı CDN omurgası, bağımsız yayın sunucuları ve kay
 <script src="/main.js"></script>
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;dcff20ce308943c19ea6e774ce5f4663&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
 </body></html>
-"""
-
-# Link bozukluklarini otomatik temizleme (Markdown cevirisi onleyici)
-# href="[x](y)" => href="x" yapalim ki dosya bozulmasin.
-html_content = re.sub(r'href="\[(.*?)\]\([^)]+\)"', r'href="\1"', html_content)
-html_content = re.sub(r'src="\[(.*?)\]\([^)]+\)"', r'src="\1"', html_content)
 
 with open(filepath, "w", encoding="utf-8") as f:
     f.write(html_content)
