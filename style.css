@@ -116,6 +116,7 @@ header.site-header {
   background: rgba(244, 63, 94, 0.12); border-color: #f43f5e;
 }
 .btn-lg { padding: 15px 32px; font-size: 1.05rem; border-radius: 14px; }
+.test-cta { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
 
 .mobile-toggle {
   display: none; background: transparent; border: none;
@@ -366,6 +367,8 @@ footer.site-footer {
 }
 @media (max-width: 768px) {
   .nav-links, .header-actions .btn-secondary { display: none; }
+  .test-cta { flex-direction: column; align-items: stretch; }
+  .test-cta .btn { width: 100%; white-space: normal; }
   .mobile-toggle { display: block; }
   .hero-section { padding: 50px 0 40px; }
   .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 20px; }
