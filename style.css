@@ -378,7 +378,7 @@ footer.site-footer {
 }
 .hero-bgs img.on { opacity: 1; }
 .hero-dim {
-  background: linear-gradient(90deg, rgba(9, 11, 16, 0.92) 0%, rgba(9, 11, 16, 0.78) 48%, rgba(9, 11, 16, 0.55) 100%);
+  background: linear-gradient(90deg, rgba(9, 11, 16, 0.9) 0%, rgba(9, 11, 16, 0.62) 40%, rgba(9, 11, 16, 0.28) 100%);
   z-index: 1;
 }
 .hero-sticky .hero-section { position: relative; z-index: 2; padding: 28px 0; width: 100%; }
