@@ -199,6 +199,12 @@ p.section-desc { font-size: 1.05rem; color: var(--text-muted); }
 .feature-card {
   background: var(--surface); border: 1px solid var(--surface-border);
   border-radius: var(--radius); padding: 32px; transition: var(--transition);
+  overflow: hidden;
+}
+.feature-card .card-photo,
+.device-card .card-photo {
+  display: block; width: calc(100% + 64px); max-width: none;
+  height: 168px; object-fit: cover; margin: -32px -32px 20px;
 }
 .feature-card:hover {
   background: var(--surface-hover); border-color: rgba(244, 63, 94, 0.35);
@@ -267,6 +273,10 @@ p.section-desc { font-size: 1.05rem; color: var(--text-muted); }
 .device-card {
   background: var(--surface); border: 1px solid var(--surface-border);
   border-radius: var(--radius); padding: 26px; transition: var(--transition);
+  overflow: hidden;
+}
+.device-card .card-photo {
+  width: calc(100% + 52px); height: 140px; margin: -26px -26px 16px;
 }
 .device-card:hover {
   border-color: rgba(244, 63, 94, 0.35); transform: translateY(-3px);
