@@ -410,7 +410,13 @@ footer.site-footer {
 .shot-rail button.on i { color: #f43f5e; }
 @media (max-width: 768px) {
   .hero-stage { height: auto; }
-  .hero-sticky { position: relative; height: auto; min-height: 100vh; display: block; }
+  .hero-sticky {
+    position: relative; top: auto; height: auto; min-height: 0;
+    overflow: visible; display: block;
+  }
+  .hero-dim {
+    background: linear-gradient(180deg, rgba(9, 11, 16, 0.92) 0%, rgba(9, 11, 16, 0.86) 100%);
+  }
 }
 
 .mobile-drawer {
