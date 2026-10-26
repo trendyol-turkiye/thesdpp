@@ -86,13 +86,20 @@ body { height: 100%; margin: 0; }
 .faq-item:hover { border-color: rgba(139, 92, 246, 0.5); }
 .review-card { border-left: 4px solid #d97706; }
 .video-overlay { background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); }
+.derby-kampanya { position: relative; z-index: 50; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; width: 100%; padding: 10px 16px 13px; text-align: center; text-decoration: none; color: #fff; background: linear-gradient(90deg, #9b1024 0%, #c8102e 38%, #0a2458 62%, #00205b 100%); }
+.derby-kampanya::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: linear-gradient(90deg, #c8102e 0%, #f5c518 50%, #f5c518 100%); }
+.derby-kampanya-teklif, .derby-kampanya-ad { margin: 0; max-width: 100%; }
+.derby-kampanya-teklif { font-size: clamp(1rem, 2.8vw, 1.35rem); font-weight: 900; line-height: 1.2; color: #fff; }
+.derby-kampanya-ad { font-size: clamp(0.72rem, 2.1vw, 0.95rem); font-weight: 700; line-height: 1.3; letter-spacing: 0.02em; text-transform: uppercase; color: #ffe9a8; }
+@media (max-width: 480px) { .derby-kampanya { padding: 8px 12px 11px; gap: 4px; } .derby-kampanya-ad { letter-spacing: 0; } }
 </style>
 </head>
 <body class="h-full overflow-y-auto Casibom-gradient text-white">
 
-<div class="bg-amber-500 text-black text-center text-sm md:text-base font-bold py-2 animate-pulse w-full z-50 relative">
-    <i data-lucide="zap" class="inline w-4 h-4 mr-1"></i> Derbi Haftasına Özel Premium IPTV Kontenjanı Dolmak Üzere! (Son 14 Kişi)
-</div>
+<a class="derby-kampanya" href="/iptv-satin-al">
+    <p class="derby-kampanya-teklif">1 paket alana 1 paket bedava</p>
+    <p class="derby-kampanya-ad">Galatasaray Fenerbahçe Derbisine Özel Kampanya</p>
+</a>
 
 <div class="relative w-full">
     <div class="floating-orb" style="width:400px;height:400px;background:#7c3aed;top:5%;left:-10%;"></div>

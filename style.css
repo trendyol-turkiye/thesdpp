@@ -39,6 +39,59 @@ a { color: inherit; text-decoration: none; transition: var(--transition); }
 img { max-width: 100%; height: auto; }
 .container { width: min(var(--max-w), calc(100% - 40px)); margin: 0 auto; }
 
+.derby-kampanya {
+  position: relative;
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  padding: 10px 16px 13px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(90deg, #9b1024 0%, #c8102e 38%, #0a2458 62%, #00205b 100%);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+}
+.derby-kampanya::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #c8102e 0%, #f5c518 38%, #f5c518 62%, #f5c518 100%);
+}
+.derby-kampanya-teklif,
+.derby-kampanya-ad {
+  margin: 0;
+  max-width: 100%;
+}
+.derby-kampanya-teklif {
+  font-size: clamp(1rem, 2.8vw, 1.35rem);
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.derby-kampanya-ad {
+  font-size: clamp(0.72rem, 2.1vw, 0.95rem);
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffe9a8;
+}
+@media (min-width: 768px) {
+  .derby-kampanya { padding: 12px 24px 15px; gap: 4px; }
+}
+@media (max-width: 480px) {
+  .derby-kampanya { padding: 8px 12px 11px; gap: 4px; }
+  .derby-kampanya-ad { letter-spacing: 0; }
+}
+
 header.site-header {
   position: sticky; top: 0; z-index: 1000;
   background: rgba(9, 11, 16, 0.90);
